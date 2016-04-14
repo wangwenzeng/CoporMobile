@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shyms.corpormobile.ui.activity.BranchActivity">
+
+    <include layout="@layout/widget_top_bar" />
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4" />
+
+    <com.viewpagerindicator.UnderlinePageIndicator
+        android:id="@+id/UpIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/vp_branch"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<android.support.v4.view.PagerTabStrip-->
+    <!--android:id="@+id/stripTab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="top"-->
+    <!--android:background="@drawable/tab_indicator"-->
+    <!--android:minWidth="10dp" />-->
+    <!--</android.support.v4.view.ViewPager>-->
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_affair_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="GSFTY567-456"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_affair_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="2016-34-34"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/affair_remind_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_affair_heip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="事项名称:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_affair_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_affair_heip"
+                android:text="交通肇事逃逸"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/affair_remind_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_check_heip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="审核状态:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_check_atate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_check_heip"
+                android:text="正在审核"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/affair_remind_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_idea_heip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="审核意见"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_check_idea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_idea_heip"
+                android:text="审核材料不完整"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

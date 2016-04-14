@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.shyms.corpormobile"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {//使用JAVA8语法解析
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+retrolambda {//指定将源码编译的级别，使用下列代码，会将代码编译到兼容1.6的字节码格式
+    javaVersion JavaVersion.VERSION_1_6
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha1'
+    //butterKnife 注解
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+//logger
+    compile 'com.orhanobut:logger:1.11'
+    //retrofit   打印异常
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    //autoViewpage
+    compile('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+    //fresco
+    compile 'com.facebook.fresco:fresco:0.9.0+'
+//circleImageView
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    //viewPageIndicator
+    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
+    //eventbus
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+
+    //retrofit  以下三个取自纠纠
+//    compile 'com.squareup.retrofit:retrofit:1.9.0'
+//    //okhttp
+//    compile 'com.squareup.okhttp:okhttp:2.4.0'
+//    compile 'io.reactivex:rxandroid:0.25.0'
+
+
+}

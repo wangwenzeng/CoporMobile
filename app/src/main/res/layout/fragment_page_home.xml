@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_top_bar" />
+
+    <FrameLayout
+        android:id="@+id/fl_jump_news"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:id="@+id/vp_home_pic_auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_home_vp" />
+
+        <TextView
+            android:id="@+id/tv_home_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="新闻标题"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_home_party1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:background="@mipmap/homepage_affair_record">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="办事记录"
+                    android:textColor="@drawable/tv_font_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_home_party2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:background="@mipmap/homepage_pic_upload">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="拍照上传"
+                    android:textColor="@drawable/tv_font_color"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_home_party3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@mipmap/homepage_line_up">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="排队"
+                    android:textColor="@drawable/tv_font_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_home_party4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@mipmap/homepage_remind">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="提醒"
+                    android:textColor="@drawable/tv_font_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@mipmap/bg_widget">
+
+    <FrameLayout
+        android:id="@+id/top_bar_back"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/top_bar_left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:src="@drawable/daohang_fanhui_normal"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/top_bar_right"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true" />
+
+        <TextView
+            android:id="@+id/top_bar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="首页"
+        android:textColor="@color/kink_choice_title"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/separate"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_separate_line" />
+</RelativeLayout>

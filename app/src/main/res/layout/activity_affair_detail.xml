@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shyms.corpormobile.ui.activity.AffairDetailActivity">
+
+    <include layout="@layout/widget_top_bar" />
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/tab_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4" />
+
+    <com.viewpagerindicator.UnderlinePageIndicator
+        android:id="@+id/lp_Indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_affair_page"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:text="预约"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="忘记了"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

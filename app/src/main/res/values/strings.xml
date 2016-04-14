@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">法人手机</string>
+
+    <string name="no_net_tip">网络断开，请稍后再试</string>
+    <string name="load_dialog_loading">请求中...</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bug">BugActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+
+    <string name="setting_title">设置</string>
+    <string name="setting_update_password">修改密码</string>
+    <string name="setting_reset_password">重设密码</string>
+    <string name="setting_bind_email">绑定邮箱</string>
+    <string name="setting_feed_back">意见反馈</string>
+    <string name="setting_feed_update_version">版本更新</string>
+    <string name="setting_has_new_version">有新版本可用</string>
+    <string name="setting_has_current_version">当前版本</string>
+    <string name="setting_dont_need_update">当前已经是最新版本</string>
+    <string name="title_activity_branch">BranchActivity</string>
+    <string name="title_activity_affair_detail">AffairDetailActivity</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="title_activity_affair_record">AffairRecordActivity</string>
+    <string name="title_activity_line_up">LineUpActivity</string>
+    <string name="title_activity_remind">RemindActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_bind_email">BindEmailActivity</string>
+    <string name="title_activity_sms_vertify">SmsVertifyActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+
+</resources>

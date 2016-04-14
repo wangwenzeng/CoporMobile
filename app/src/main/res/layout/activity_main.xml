@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/widget_top_bar" />
+
+    <FrameLayout
+        android:id="@+id/container_main_page"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp" />
+
+    <FrameLayout
+        android:id="@+id/menu_bar_main_page"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="#ccffcc"
+        android:clipChildren="false"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/party1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/home_margin_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn1"
+                    android:layout_width="@dimen/home_bg_height"
+                    android:layout_height="@dimen/home_bg_height"
+                    android:background="@drawable/nav_home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:textColor="#969696"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/party2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/home_margin_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn2"
+                    android:layout_width="@dimen/home_bg_height"
+                    android:layout_height="@dimen/home_bg_height"
+                    android:background="@drawable/nav_ad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="办事指南"
+                    android:textColor="#969696"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/home_margin_height"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/party3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btn4"
+                        android:layout_width="@dimen/home_bg_height"
+                        android:layout_height="@dimen/home_bg_height"
+                        android:background="@drawable/nav_charity" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的"
+                        android:textColor="#969696"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/red_tip"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bg_red_tip_circle"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/party4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/home_margin_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn5"
+                    android:layout_width="@dimen/home_bg_height"
+                    android:layout_height="@dimen/home_bg_height"
+                    android:background="@drawable/nav_user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置"
+                    android:textColor="#969696"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

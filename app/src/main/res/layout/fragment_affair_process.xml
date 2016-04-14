@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_process_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:text="你好，这是办事流程页面 " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_material_list"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:text="材料列表"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--<view-->
+            <!--android:layout_width="2dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/grey" />-->
+
+            <Button
+                android:id="@+id/btn_appoint"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:text="预约事项"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

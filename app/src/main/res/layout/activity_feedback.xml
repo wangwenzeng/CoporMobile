@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    tools:context="com.shyms.corpormobile.ui.activity.FeedbackActivity">
+
+    <include layout="@layout/widget_top_bar" />
+
+    <EditText
+        android:id="@+id/feed_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:layout_weight="1"
+        android:background="@drawable/bg_feedback_input"
+        android:gravity="top"
+        android:hint="请你在这里填写你对纠纠的意见,我们将不断改进,感谢支持!"
+        android:maxLength="50"
+        android:padding="8dp"
+        android:textColor="#9f9f9f"
+        android:textColorHint="#b7b7b7"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/send_feed_back"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="20dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="发送反馈"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小贴士："
+            android:textColor="#b7b7b7"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果突然不能正常使用法人手机，可重启程序或手机试试你也可以给纠纠客服发邮件：Wick_sir@163.com"
+            android:textColor="#b7b7b7"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>
