@@ -51,7 +51,7 @@ dependencies {
     //viewPageIndicator
     compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
     //eventbus
-    compile 'de.greenrobot:eventbus:2.4.0'
+//    compile 'de.greenrobot:eventbus:2.4.0'
 
 
     //retrofit  以下三个取自纠纠

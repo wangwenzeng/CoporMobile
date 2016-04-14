@@ -24,7 +24,9 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.OnClick;
 import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
+import rx.Scheduler;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 /**
  * Created by Weimin on 4/9/2016.
@@ -51,6 +53,7 @@ public class HomePageFragment extends BaseFragment {
         MyPageAdapter adapter = new MyPageAdapter();
         mViewPager.setAdapter(adapter);
 //        mViewPager.startAutoScroll();
+        getLatestData();
     }
 
     @OnClick(R.id.rl_home_party1)
@@ -73,11 +76,11 @@ public class HomePageFragment extends BaseFragment {
 
 //        NetRequest.APIInstance.get
         NetRequest.APIInstance.getInformation()
+                .subscribeOn(Schedulers.io())
+                .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(results -> {
                 }, throwable -> {
-
-
                 });
     }
 

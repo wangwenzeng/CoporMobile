@@ -133,7 +133,7 @@ public interface APIClient {
 //    Observable<NObject<NInformation>> getInformation(@Query("information_id") int information_id);
 
     //2.49 获取首页信息（9条）
-    @GET("/get_i9.php/")
+    @GET("/fryms/api/get_i9.php")
     Observable<NObjectList<NInformationData>> getInformation();
 
     @GET("logout.php")

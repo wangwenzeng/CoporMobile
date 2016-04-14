@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class NetRequest {
 
-    public final static String BASE_URL = "https://cs.yatesun.com/fryms/api/";
+    public final static String BASE_URL = "https://cs.yatesun.com";
     public static APIClient APIInstance;
     public static Cache cache;
 
