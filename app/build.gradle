@@ -51,14 +51,8 @@ dependencies {
     //viewPageIndicator
     compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
     //eventbus
-//    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
 
-
-    //retrofit  以下三个取自纠纠
-//    compile 'com.squareup.retrofit:retrofit:1.9.0'
-//    //okhttp
-//    compile 'com.squareup.okhttp:okhttp:2.4.0'
-//    compile 'io.reactivex:rxandroid:0.25.0'
 
 
 }
